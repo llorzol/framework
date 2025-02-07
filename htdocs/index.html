@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>U.S. Geological Survey A Three-Dimensional Hydrogeologic Framework Model of Columbia Plateau Regional Aquifer System</title>
+
+    <!-- meta -->
+    <!--#include virtual="includes/meta_inc.html" -->
+
+    <!-- css -->
+    <!--#include virtual="DrupalVisID/includes/meta-css.html" -->
+    <!--#include virtual="includes/css_inc.html" -->
+    <!-- end css -->
+
+  </head>
+
+  <body id="offwhite">
+
+    <!--#include virtual="DrupalVisID/includes/header_WRET.html"-->
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="clear title fs-2 mt-3 mb-3">U.S. Geological Survey</div>
+          <div class="clear title fs-2 mb-3">
+            <a class= "link-light link-underline-opacity-0" href="https://www.usgs.gov/centers/washington-water-science-center/science/columbia-plateau-groundwater-availability-study#overview">
+              <div class="clear title fs-2">A Three-Dimensional Hydrogeologic Framework Model of Columbia Plateau Regional Aquifer System</div>
+            </a>
+          </div>
+          <div class="clear title fs-2 mb-3">Geologic Framework Mapper</div>
+        </div>
+      </div>
+      <!-- End Page Heading/Breadcrumbs -->
+
+      <!-- Accordion -->
+      <div class="row mb-3">
+        <div class="col-sm-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Introduction
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <span id="framework_welcome_txt"></span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  General Instructions
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <span id="framework_general_instructions_txt"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Explanation
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <span id="framework_explanation_txt"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Contact
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <span id="framework_contacts_txt"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="row mb-3">
+        <div class="col-sm-12" id="links">
+          <!--map-->
+          <div class="body-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <!-- Start Leaflet Map object -->
+                  <div id="maps">
+                    <div id="map" style="cursor: default;"></div>
+                  </div>
+                  <!-- End Leaflet Map object -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--end row-->
+
+    </div> <!-- end of class="container" -->
+
+    <!-- USGS Footer Template -->
+    <!--#include virtual="DrupalVisID/includes/footer_WRET.html"-->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Supporting scripts  -->
+    <script src="javascripts/required/jquery.min.js"></script>
+    <script src="javascripts/required/popper.min.js"></script>
+    <script src="javascripts/required/tether.min.js"></script>
+    <script src="javascripts/required/bootstrap.bundle.min.js"></script>
+    <script src="javascripts/required/jquery.url.js"></script>
+    <script src="javascripts/required/leaflet.min.js"></script>
+    <script src="javascripts/required/L.Control.Locate.min.js"></script>
+    <script src="javascripts/required/leaflet-transparency.js"></script>
+    <script src="javascripts/required/Control.MiniMap.min.js"></script>
+    <script src="javascripts/required/Control.Opacity.js"></script>
+
+    <!-- For control buttons -->
+    <script src="javascripts/required/easy-button.js"></script>
+    <link rel="stylesheet" href="css/required/font-awesome.min.css">
+    <link rel="stylesheet" href="css/required/leaflet.zoomhome.css">
+    <script src="javascripts/required/leaflet.zoomhome.min.js"></script>
+
+    <!-- Esri Leaflet Core -->
+    <script src="javascripts/required/esri-leaflet-core.js"></script>
+    <script src="javascripts/required/esri-leaflet-geocoder.js"></script>
+
+    <!-- Proj4 scripts -->
+    <script src="javascripts/proj4js/dist/proj4.js"></script>
+
+    <!-- Local scripts -->
+    <script src="javascripts/usgs/webRequest.js"></script>
+    <script src="javascripts/usgs/helpTips.js"></script>
+    <script src="javascripts/usgs/baseMaps.js"></script>
+    <script src="javascripts/usgs/dialog.js"></script>
+    <script src="javascripts/usgs/map_coordinate.js"></script>
+    <script src="javascripts/usgs/framework_tools.js"></script>
+    <script src="javascripts/usgs/framework_map.js"></script>
+
+  </body>
+</html>

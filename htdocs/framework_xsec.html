@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+
+    <!-- meta -->
+    <!--#include virtual="includes/meta_inc.html" -->
+
+    <!-- css -->
+    <!--#include virtual="DrupalVisID/includes/meta-css.html" -->
+    <!--#include virtual="includes/css_inc.html" -->
+    <!-- end css -->
+
+    <!-- Local styles -->
+    <link rel="stylesheet" type="text/css" href="css/usgs/framework.css">
+    <link rel="stylesheet" type="text/css" href="css/usgs/framework_tables.css">
+
+    <link rel="stylesheet" type="text/css" href="css/usgs/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/usgs/usgs.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/usgs/map.css">
+    <link rel="stylesheet" type="text/css" href="css/usgs/framework_flot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+
+    <style>
+      #map { width: 300px; height: 300px; }
+    </style>
+
+  </head>
+
+  <body id="publish" style="cursor: default;">
+
+    <!--#include virtual="DrupalVisID/includes/header_WRET.html"-->
+
+    <!-- Container Section -->
+    <div id="about" class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="clear title fs-2 mt-3 mb-3">U.S. Geological Survey</div>
+          <div class="clear title fs-2 mb-3">
+            <a class= "link-light link-underline-opacity-0" href="https://www.usgs.gov/centers/washington-water-science-center/science/columbia-plateau-groundwater-availability-study#overview">
+              <div class="clear title fs-2">A Three-Dimensional Hydrogeologic Framework Model of Columbia Plateau Regional Aquifer System</div>
+            </a>
+          </div>
+          <div class="clear title fs-2 mb-3">Geologic Framework Mapper</div>
+        </div>
+      </div>
+      <!-- End Page Heading/Breadcrumbs -->
+
+      <!-- Accordion -->
+      <div class="row mb-3">
+        <div class="col-sm-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Introduction
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <span id="xsec_welcome_txt"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Contact
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <span id="framework_contacts_txt"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav Bar Container-->
+      <div class="row spacemetop mb-3">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://www.usgs.gov"><img class="xsecLogo" src="css/usgs/images/xsec.png"></a>
+              <div class="navbar-brand me-auto"><span id="page_title"></span></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Cell Profile Container-->
+      <div class="row mb-3">
+        <div class="col-sm-9">
+          <div class="flot_plot_labels text-left">
+            Zoom period plot
+          </div>
+          <div class="zoom_period_plot">
+            <div id="xsec_graph" class="flot_placeholder"></div>
+          </div>
+          <div id="period_selected" class="flot_plot_labels text-left">
+            Period selected plot
+          </div>
+          <div class="period_selected_plot">
+            <div id="xsec_overview" class="flot_overview"></div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <div id="cell_legend" class="flot_legend float-sm-right"></div>
+        </div>
+
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-sm-12">
+          <p class="flot_instructions"><span style="text-align=right;">Vertical scale greatly exaggerated</span></p>
+          <p class="flot_instructions">
+            To zoom, select a rectangle in either the zoom plot or the overview plot by using the
+            left button of the mouse to slowly drag an area.
+          </p>
+          <p class="flot_instructions">
+            To reset, place the cursor over the overview plot above and double click the left button of the mouse.
+            More information is provided in the Welcome and General Instruction portions along the left panel.
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- <div class="container-fluid"> -->
+
+      <!-- USGS Footer Template -->
+      <!--#include virtual="DrupalVisID/includes/footer_WRET.html"-->
+
+      <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="javascripts/excanvas.min.js"></script><![endif]-->
+
+      <!-- Supporting scripts  -->
+      <script src="javascripts/required/jquery.min.js"></script>
+      <script src="javascripts/required/popper.min.js"></script>
+      <script src="javascripts/required/tether.min.js"></script>
+      <script src="javascripts/required/bootstrap.min.js"></script>
+      <script src="javascripts/required/jquery.url.js"></script>
+      <script src="javascripts/required/leaflet.js"></script>
+
+      <!-- Flot routines -->
+      <script type="text/javascript" src="javascripts/usgs/jquery.flot.min.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/jquery.flot.fillbetween.min.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/jquery.flot.selection.min.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/jquery.flot.crosshair.min.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/jquery.flot.axislabels.js"></script>
+
+      <!-- Flot graphing routines -->
+    <script type="text/javascript" src="javascripts/usgs/webRequest.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/flot.utils.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/modal.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/map_content.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/framework_tools.js"></script>
+      <script type="text/javascript" src="javascripts/usgs/framework_xsec.js"></script>
+
+  </body>
+</html>

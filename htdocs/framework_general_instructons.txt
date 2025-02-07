@@ -1,0 +1,78 @@
+<p>
+  <b>Pan and Zoom</b>: Use standard map tools to adjust the map view to an area of interest.
+</p>
+<p>
+  <b>Well logs</b>: Click on any location with the extent of the geomodel and a graphic well log will appear
+  showing the model derived estimates of geologic units and thicknesses at that location. Select the well
+  log information tab to see elevations of the tops of each unit. Select the Framework information tab
+  to see general location information. Error estimates for these predicited elevations are described
+  by <a href="https://www.usgs.gov/publications/three-dimensional-model-geologic-framework-columbia-plateau-regional-aquifer-system">Burns and others (2010)</a>.
+</p>
+<p>
+  <b>Sections</b>: Click on two or more locations, then click "Create Cross Section" button
+  <img class="xsecImage" src="css/usgs/images/xsec.png"> on the bar above the map. A graphic section along the line segment(s) between
+  locations will appear. The section is drawn from left to right in the order locations were selected. To zoom,
+  try selecting a rectangle in either plot window by using the
+  left button of the mouse to drag an area. To reset, place the cursor over the overview graphic
+  above and double click the left button of the mouse.
+</p>
+<p>
+  <b>Remove Location</b>: This tool <img class="removeLocationTool" src="css/usgs/images/removeLocation.png"> removes all locations and profile lines from the map.
+</p>
+<p>
+  <b>Search Tool<img src="css/usgs/images/search.png"></b>: Enter text that representing an address or a location
+  of values of latitude and longitude. The following are examples:
+</p>
+ <p>
+   <h6> Address: </h6>
+   </p>
+   <p>
+   <u>Street address:</u>  2120 SW 5th Ave., Portland, Oregon
+   </p>
+   <p>
+   <u>Intersection:</u>       SW 5th Ave. and SW Lincoln St., Portland, Oregon
+   </p>
+
+   <h4> Latitude and Longitude  </h4>
+   <table cellpadding="15">
+    <tr>
+     <td><u>Degrees, Minutes, and Decimal Seconds:</u></td>
+     <td>45 30 27.64N</td>
+     <td>122 40 57.77W</td>
+     <td>or</td>
+     <td>45 30 27.64</td>
+     <td>-122 40 57.77</td>
+    </tr>
+    <tr>
+     <td><u>Degrees and Decimal Minutes:</u></td>
+     <td>45 30.4607N</td>
+     <td>122 40.9628W</td>
+     <td>or</td>
+     <td>45 30.4607</td>
+     <td>-122 40.9628</td>
+    </tr>
+    <tr>
+     <td><u>Decimal Degrees:</u></td>
+     <td>45.507678N</td>
+     <td>122.682714W</td>
+     <td>or</td>
+     <td>45.507678</td>
+     <td>-122.682714</td>
+    </tr>
+    <tr>
+     <td colspan="6">
+     <i>Note: for Longitude use prefix of "-" or suffix "W" to indicate west Longitudes (for use in the Portland area).</i>
+     </td>
+    </tr></table>
+</p>
+<p>
+  <b>Surface geologic model unit map</b>: The model derived surface geology is overlain on the base map.
+  A slider tool <img src="css/usgs/images/opacity-slider.png">in the upper right adjusts the opacity of the surface geology image onto the base map.
+</p>
+<p>
+  <b>Zoom to your location</b>: Click <span class="zoomToLocationArrow">&nbsp&nbsp&nbsp</span> to zoom to your
+  location provided the location is within the map boundary.
+</p>
+<p>
+  <b>Base map</b>: map, satellite, terrain, topo, and photo options are selectable in the dropdown menu.
+</p>

@@ -1,0 +1,44 @@
+<div id="framework_tools" class="left_pane_topic">Tools</div>
+ <div class="left_pane_text">
+  <p><button id="logs"            class="tools fg-button ui-state-default ui-corner-all">Well Logs</button></p>
+  <p><button id="print_well_logs" class="tools fg-button ui-state-default ui-corner-all">Print Well Logs</button></p>
+  <p><button id="xsec"            class="tools fg-button ui-state-default ui-corner-all">Create Cross Section</button></p>
+  <p><button id="print_xsec"      class="tools fg-button ui-state-default ui-corner-all">Print Cross Section</button></p>
+  <p><button id="reset_xsec"      class="tools fg-button ui-state-default ui-corner-all">Reset (remove all locations)</button></p>
+ </div>
+
+<script>
+
+ $("button.tools").hover(
+                         function(){ 
+                                    $(this).addClass("ui-state-hover"); 
+                                   },
+                         function(){ 
+                                    $(this).removeClass("ui-state-hover"); 
+                                   }
+                        );
+
+ $('#logs').click(function() {
+                                   //alert("Cell Logs");
+                                   cell_geometry = SetCellGeometry(cell_geometry);
+ });
+ $('#print_well_logs').click(function() {
+                                   var message = "Not available yet";
+                                   //message_dialog(message, "Message");
+                                   jQuery("#well_log).append('<a href="http://127.0.0.1/cgi-bin/cpras/framework_well_log.pl?&longitude=-118.92972164191522&latitude=47.27981514025738&x_coordinate=2030162.9193722697&y_coordinate=713720.9271289341&rasters=tiffs/obtop.tif%20tiffs/smtop.tif%20tiffs/wntop.tif%20tiffs/grtop.tif%20tiffs/pmtop.tif&color=framework_color_map.txt&northwest_corner=1210631.621,1189639.234&northeast_corner=2951131.621,1189639.234&southwest_corner=1210631.621,-405860.766&southeast_corner=2951131.621,-405860.766&output=pdf">Print results to report</a>');
+                                   //PrintWellLogs(markers);
+ });
+ $('#xsec').click(function() {
+                                   //alert("Create Cross Section");
+                                   BuildCellXsec(markers);
+ });
+ $('#print_xsec').click(function() {
+                                   var message = "Not available yet";
+                                   message_dialog(message, "Message");
+                                   //PrintCellXsec();
+ });
+ $('#reset_xsec').click(function() {
+                                   //alert("Build Cross Section");
+                                   resetCrossSection(markers);
+ });
+</script>

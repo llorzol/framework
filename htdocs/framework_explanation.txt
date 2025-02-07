@@ -1,0 +1,24 @@
+               <table>
+                 <tbody>
+                   <tr>
+                     <td style="width: 20px;" bgcolor="#FFFF82"></td>
+                     <td>Overburden</td>
+                   </tr>
+                   <tr>
+                     <td bgcolor="#EBA8A8"></td>
+                     <td>Saddle Mountains Basalt</td>
+                   </tr>
+                   <tr>
+                     <td bgcolor="#91C691"></td>
+                     <td>Wanapum Basalt</td>
+                   </tr>
+                   <tr>
+                     <td bgcolor="#BE977B"></td>
+                     <td>Grande Ronde Basalt</td>
+                   </tr>
+                   <tr>
+                     <td bgcolor="#B6BEE9"></td>
+                     <td>Older bedrock</td>
+                   </tr>
+                 </tbody>
+               </table>

@@ -1,0 +1,87 @@
+/**
+ * Namespace: slider.css
+ *
+ * The file slider.css is a css file to providing styling for opacity slider. 
+ *
+ * version 2.02
+ * July 21, 2023
+*/
+
+/*
+###############################################################################
+# Copyright (c) Oregon Water Science Center
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+# OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
+###############################################################################
+*/
+.slidecontainer {
+   background: #d3d3d3;
+   width: 100%; /* Width of the outside container */
+   -webkit-box-shadow: 6px 6px 9px -2px rgba(120,120,120,1);
+   -moz-box-shadow: 6px 6px 9px -2px rgba(120,120,120,1);
+   box-shadow: 6px 6px 9px -2px rgba(120,120,120,1);
+   border: 2px solid #bbbbbb;
+   border-radius: 4px;
+}
+
+.opacity-control {
+   background: #d3d3d3;
+   -webkit-box-shadow: 6px 6px 9px -2px rgba(120,120,120,1);
+   -moz-box-shadow: 6px 6px 9px -2px rgba(120,120,120,1);
+   box-shadow: 6px 6px 9px -2px rgba(120,120,120,1);
+   border: 2px solid #bbbbbb;
+   border-radius: 4px;
+   margin-top: 5px;
+   margin-left: 5px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}

@@ -1,0 +1,8 @@
+              <p>Questions on the geomodel contact:</p>
+               <p>Erick Burns</br>
+               USGS</br>
+               2130 SW 5th Ave.</br>
+               Portland, OR 97201</br>
+               503-251-3250</br>
+               <a href="mailto:eburns@usgs.gov">eburns@usgs.gov</a>
+               </p>
